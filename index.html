@@ -9,78 +9,105 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Jost:wght@200;300;400&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
-<style>em { color: var(--keystone); } .eyebrow { color: var(--keystone); }</style>
 </head>
 <body>
 
 <header class="site-header">
-  <a class="logo" href="./" style="display:flex;align-items:center;gap:10px">
-    <img src="images/keystone-mark.svg" alt="" width="22" height="22">Keystone
+  <a class="logo" href="./" aria-label="Keystone home">
+    <svg viewBox="0 0 100 100" aria-hidden="true"><polygon points="30,24 70,24 62.5,76 37.5,76" fill="currentColor" stroke="currentColor" stroke-width="4" stroke-linejoin="round"/></svg>
+    Keystone
   </a>
-  <nav><ul class="nav">
-    <li><a href="#what">What it does</a></li>
-    <li><a href="#origin">Origin</a></li>
-    <li><a href="#contact">Pilot</a></li>
+  <nav aria-label="Primary"><ul class="nav">
+    <li><a href="#quotes">Features</a></li>
+    <li><a href="#pilot">Pilot</a></li>
   </ul></nav>
 </header>
 
 <main>
 
-  <section class="page-head">
-    <img class="mark fi" src="images/keystone-mark.svg" alt="Keystone mark">
-    <p class="eyebrow fi">Software for the trades</p>
-    <h1 class="fi">One system, from first enquiry to <em>final snag.</em></h1>
-    <p class="lede fi" style="margin-top:32px">Built for stone, joinery, fit-out and specialist trade companies that still run on Excel, WhatsApp and memory.</p>
-    <a class="btn fi" href="#contact">Join the pilot</a>
-  </section>
-
-  <section class="section" id="what">
-    <div class="two-col">
-      <div class="fi">
-        <p class="eyebrow">What it does</p>
-        <h2>The whole job, <em>one place.</em></h2>
-      </div>
-      <ul class="list fi">
-        <li><strong>Quotes and estimates</strong><span>In your own format, with a branded PDF in one click.</span></li>
-        <li><strong>Won quote becomes a project</strong><span>No re-typing.</span></li>
-        <li><strong>Samples, drawings, documents and tasks</strong><span>Kept together on each job.</span></li>
-        <li><strong>Project finance</strong><span>Contract value, income received, costs by category and live margin.</span></li>
-        <li><strong>Invoices</strong><span>From ready to sent to paid, with reminders.</span></li>
-        <li><strong>Works on a phone</strong><span>Installs like an app, with notifications.</span></li>
-      </ul>
+  <section class="panel" data-caption="Keystone" data-n="1" id="top">
+    <div class="inner">
+      <p class="eyebrow fi">Software for stone, joinery and fit-out</p>
+      <h1 class="fi">One system, from first enquiry to final snag.</h1>
+      <p class="text fi">Built for specialist trade companies that still run on Excel, WhatsApp and memory.</p>
     </div>
   </section>
 
-  <section class="section dark" id="origin">
-    <div class="narrow fi">
-      <p class="eyebrow">Origin</p>
-      <h2>Built inside a real stone business.</h2>
-      <p class="lede">Keystone is used there every day. It is now open to a small group of pilot companies.</p>
+  <section class="panel" data-caption="Quotes and estimates" data-n="2" id="quotes">
+    <div class="inner">
+      <p class="eyebrow fi">Quotes</p>
+      <h2 class="fi">Quotes in your own format.</h2>
+      <p class="text fi">A branded PDF in one click.</p>
     </div>
   </section>
 
-  <section class="section" id="contact">
-    <div class="narrow fi">
-      <p class="eyebrow">Pilot</p>
-      <h2>See it with <em>your own jobs.</em></h2>
-      <p>If you would like to try Keystone, get in touch.</p>
-      <!-- TODO: add your email address to this mailto link -->
-      <a class="btn" href="mailto:?subject=Keystone%20pilot">Get in touch</a>
+  <section class="panel" data-caption="Quote to project" data-n="3">
+    <div class="inner">
+      <p class="eyebrow fi">Projects</p>
+      <h2 class="fi">A won quote becomes a project.</h2>
+      <p class="text fi">No re-typing.</p>
+    </div>
+  </section>
+
+  <section class="panel" data-caption="Samples, drawings, documents, tasks" data-n="4">
+    <div class="inner">
+      <p class="eyebrow fi">Everything on the job</p>
+      <h2 class="fi">Samples, drawings, documents and tasks in one place.</h2>
+    </div>
+  </section>
+
+  <section class="panel" data-caption="Project finance" data-n="5">
+    <div class="inner">
+      <p class="eyebrow fi">Finance</p>
+      <h2 class="fi">Live margin on every job.</h2>
+      <p class="text fi">Contract value, income received and costs by category.</p>
+    </div>
+  </section>
+
+  <section class="panel" data-caption="Invoices" data-n="6">
+    <div class="inner">
+      <p class="eyebrow fi">Invoices</p>
+      <h2 class="fi">From ready to sent to paid.</h2>
+      <p class="text fi">With reminders. Works on a phone, installs like an app, with notifications.</p>
+    </div>
+  </section>
+
+  <section class="panel" data-caption="Pilot" data-n="7" id="pilot">
+    <div class="inner">
+      <p class="eyebrow fi">Origin</p>
+      <h2 class="fi">Built inside a real stone business.</h2>
+      <p class="text fi">Keystone is used there every day. It is now open to a small group of pilot companies. If you would like to see it with your own jobs, get in touch.</p>
+      <a class="btn fi" href="mailto:pietrosacchelli17@gmail.com?subject=Keystone%20pilot">Get in touch</a>
     </div>
   </section>
 
 </main>
 
-<footer class="site-footer">
-  <div>© <span id="yr"></span> Keystone</div>
-</footer>
+<footer>© <span id="yr"></span> Keystone</footer>
+
+<div class="caption" aria-hidden="true">
+  <span id="cap">Keystone</span>
+  <span id="count">(1/7)</span>
+  <span>Scroll</span>
+</div>
 
 <script>
   document.getElementById('yr').textContent = new Date().getFullYear();
-  const io = new IntersectionObserver(es => es.forEach(e => {
-    if (e.isIntersecting) { e.target.classList.add('v'); io.unobserve(e.target); }
-  }), { threshold: 0.08, rootMargin: '0px 0px -30px 0px' });
-  document.querySelectorAll('.fi').forEach(el => io.observe(el));
+  const panels = [...document.querySelectorAll('.panel')];
+  const cap = document.getElementById('cap');
+  const count = document.getElementById('count');
+
+  const reveal = new IntersectionObserver(es => es.forEach(e => {
+    if (e.isIntersecting) { e.target.classList.add('v'); reveal.unobserve(e.target); }
+  }), { threshold: 0.15 });
+  document.querySelectorAll('.fi').forEach(el => reveal.observe(el));
+
+  const current = new IntersectionObserver(es => es.forEach(e => {
+    if (!e.isIntersecting) return;
+    cap.textContent = e.target.dataset.caption;
+    count.textContent = `(${e.target.dataset.n}/${panels.length})`;
+  }), { threshold: 0.55 });
+  panels.forEach(p => current.observe(p));
 </script>
 </body>
 </html>
