@@ -105,7 +105,8 @@ footer { padding: 28px var(--gutter) 70px; border-top: 1px solid var(--line); fo
 @media (max-width: 900px) {
   .panel { flex-direction: column; align-items: flex-start; justify-content: center; }
   .shot { align-self: stretch; }
-  .shot img { max-height: 40svh; }
+  .shot img { max-height: 32svh; }
+  .panel { padding-bottom: 130px; }
 }
 @media (max-width: 560px) {
   .nav { gap: 16px; }
