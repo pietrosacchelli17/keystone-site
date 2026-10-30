@@ -3,13 +3,13 @@
 <title>Keystone — Quotes, projects and finance for stone and joinery</title>
 <link rel="icon" href="images/keystone-mark-sage.png">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Jost:wght@200;300;400&family=IBM+Plex+Mono:wght@400&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Tomorrow:wght@200;300;400&family=IBM+Plex+Mono:wght@400&display=swap">
 <style>
-/* Keystone: black, thin Jost, square corners, white and grey only. Same look as PS Gallery and the Petrus Atelier hub. */
+/* Keystone: black, thin Tomorrow, square corners, white and grey only. Same look as PS Gallery and the Petrus Atelier hub. */
 :root{
   --bg:#000; --surface:#0a0a0a; --soft:#111; --ink:#fff; --mute:rgba(255,255,255,.62); --line:rgba(255,255,255,.18);
   --gold:#bdbdbd; --dark:#0d0d0d; --on-dark:#fff; --on-dark-mute:rgba(255,255,255,.62); --stone:#8a8a8a; --btn:#fff; --on-btn:#000;
-  --font:Jost,Futura,"Century Gothic",system-ui,sans-serif; color-scheme:dark;
+  --font:Tomorrow,"Chakra Petch",system-ui,sans-serif; color-scheme:dark;
 }
 *{box-sizing:border-box}
 html{scroll-behavior:smooth}
@@ -168,6 +168,17 @@ footer{padding-block:34px 56px;border-top:1px solid var(--line);color:var(--mute
 .dot.big{width:22px;height:22px;margin:-11px 0 0 -11px}
 @media (hover:hover) and (pointer:fine){html.has-dot,html.has-dot *{cursor:none!important}}
 @media (hover:none),(pointer:coarse){.dot{display:none}}
+
+/* Smaller text, set for the wider Tomorrow font */
+body{font-size:14px}
+h1{font-size:clamp(2.1rem,4.8vw,4rem)}
+h2{font-size:clamp(1.7rem,3.4vw,2.8rem)}
+h3{font-size:18px}
+.lede{font-size:clamp(15px,1.5vw,17px)}
+.wtext h3{font-size:clamp(1.4rem,2.3vw,1.85rem)}
+.stats b{font-size:clamp(2rem,4vw,2.9rem)}
+.facts b{font-size:1.8rem}.plan .p{font-size:2.1rem}
+.fstep h3{font-size:16px}.card p,.wtext ul{font-size:14px}
 </style>
 
 <div class="notice">Demo site. Example figures only.</div>
